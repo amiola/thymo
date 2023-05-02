@@ -10,11 +10,6 @@ const Home = () => {
   const {curMainPage,setCurMainPage}=useContext(Context)
   const navigation = useNavigate()
 
-  const navigate =(route,key)=>{
-    setCurMainPage(pages[key]);
-    navigation(route);
-  }
-
   return (
     <>
     <Nav/>
@@ -27,7 +22,7 @@ const Home = () => {
         const icon = `icons/plus${data.icon}.svg`
         return (
         <div className={data.class} key={i}
-        onClick={()=>navigate(data.navigation,data.key)}>
+        onClick={()=>navigation(data.navigation)}>
           <img src={icon} alt="plus icon" />
           <h3>{data.title}</h3>
         </div>
