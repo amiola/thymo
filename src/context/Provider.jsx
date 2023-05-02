@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Context from './Context'
 
 const Provider = ({children}) => {
+  const [curMainPage,setCurMainPage]=useState()
     
   return (
     <Context.Provider
-    value={{}}
+    value={{
+      curMainPage,
+      setCurMainPage
+    }}
     >
         {children}
     </Context.Provider>

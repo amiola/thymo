@@ -146,38 +146,40 @@ nav img:hover {
   background-size: cover;
 }
 
-.training {
+.container {
   width: 95vw;
   height: 100vh;
   margin-left: 5vw;
   color: #F7F7F7;
   background: #F7F7F7;
 }
-.training .head {
+.container .training {
+  background: url("/img/fitness1.jpg");
+}
+.container .head {
   width: 100%;
   height: 60%;
-  background: url("/img/fitness1.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
 }
-.training .head h1 {
+.container .head h1 {
   font-size: 4rem;
   font-weight: 500;
   padding: 10rem 0 3rem 10rem;
 }
-.training .head p {
+.container .head p {
   font-size: 3rem;
   padding-left: 10rem;
 }
-.training .cards {
+.container .cards {
   height: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
 }
-.training .cards .card-box {
+.container .cards .card-box {
   height: 100%;
   display: flex;
   justify-content: center;
