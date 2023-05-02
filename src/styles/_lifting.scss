@@ -1,0 +1,31 @@
+.lifting{
+    width: 95vw;
+    height: 100vh;
+    margin-left: 5vw;
+    color: black;
+    background: $color1;
+    @include flex(flex-start,flex-start,row);
+
+    .img{
+        width: 30%;
+        height: 100%;
+        background: url('/img/fitness3.jpg');
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+    }
+
+    .right{
+        @include flex(space-around,center,column);
+    }
+
+    .text{
+        text-align: center;
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        }
+    }

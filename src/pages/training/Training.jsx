@@ -2,8 +2,10 @@ import React from 'react'
 import Nav from '../../navbar/Nav'
 import Card from '../../components/Card'
 import { trainingCards } from '../../assets/cards'
+import { useNavigate } from 'react-router-dom'
 
 const Training = () => {
+  const navigation = useNavigate()
   return (
     <>
     <Nav/>
@@ -14,7 +16,9 @@ const Training = () => {
       </div>
       <div className="cards">
         {trainingCards.map((card,i)=>(
-          <Card key={i} card={card}/>
+          <div key={i} onClick={()=>navigation(card.navigation)} className='card-box'>
+          <Card card={card}/>
+          </div>
         ))}
       </div>
     </section>

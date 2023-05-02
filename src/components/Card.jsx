@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Card = (props) => {
     const icon = `icons/${props.card.name}.svg`
     const caret = `icons/caret${props.card.caret}.svg`
+
   return (
     <>
     <div className="card">
