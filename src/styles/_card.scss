@@ -1,0 +1,33 @@
+.card{
+    width: 20rem;
+    height: 80%;
+    background: $color2;
+    color: black;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    position: relative;
+    padding: 1rem;
+
+    @include flex(space-evenly,center,column);
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    .icon{
+        width: 20%;
+    }
+    .caret{
+        width: 2rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    h3{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}

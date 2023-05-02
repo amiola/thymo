@@ -1,0 +1,31 @@
+// Declaring variables
+
+$title1: 5rem;
+$title2: 5rem;
+$title3: 5rem;
+$title4: 5rem;
+$title5: 5rem;
+
+$color1: #F7F7F7;
+$color2: #E4E9E0;
+$color3: #4B3262;
+$color4: #794F63;
+$color5: #B96C5B;
+$color6: #E2D4B7;
+$color7: #777777;
+
+
+// Declaring functions
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+
+//Imports
+@import "global";
+@import "navbar";
+@import "home";
+@import "training";
+@import "card";

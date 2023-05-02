@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p, label, a, input {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+nav {
+  width: 5vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background: #E2D4B7;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+}
+nav li {
+  list-style: none;
+}
+nav img {
+  width: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+nav img:hover {
+  transform: scale(1.1);
+}
+
+.home {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  padding: 3rem 5rem;
+  color: #F7F7F7;
+  background: #F7F7F7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 1fr 3fr;
+  gap: 2rem;
+}
+.home .logo {
+  width: 20vw;
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+}
+.home .logo .beat {
+  border-radius: 50%;
+  width: 4rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  margin-left: -2rem;
+  border: 0.5px solid gray;
+}
+.home .logo .text {
+  margin-top: 3rem;
+  width: 20vw;
+  border-radius: 1rem;
+  border: 0.2px solid #4B3262;
+}
+.home .box {
+  width: 20vw;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home .box:hover {
+  transform: scale(1.02);
+}
+.home .box h2, .home .box h3 {
+  width: 80%;
+  padding: 0 0 2rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.home .box img {
+  width: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+.home .ptr {
+  grid-column: 2;
+  grid-row: 1/3;
+  background: #B96C5B;
+}
+.home .pc {
+  grid-column: 3;
+  grid-row: 1/3;
+  background: #E4E9E0;
+  color: black;
+}
+.home .gn {
+  grid-column: 4;
+  grid-row: 1;
+  background: #794F63;
+}
+.home .kh {
+  grid-column: 1;
+  grid-row: 2/4;
+  background: #794F63;
+}
+.home .hn {
+  grid-column: 2;
+  grid-row: 3;
+  background: #E4E9E0;
+  color: black;
+}
+.home .wr {
+  grid-column: 3;
+  grid-row: 3;
+  background: #4B3262;
+}
+.home .pd {
+  grid-column: 4;
+  grid-row: 2/4;
+  color: black;
+  background: url("/public/img/fitness4.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.training {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  color: #F7F7F7;
+  background: #F7F7F7;
+}
+.training .head {
+  width: 100%;
+  height: 60%;
+  background: url("/public/img/fitness1.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+.training .head h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 10rem 0 3rem 10rem;
+}
+.training .head p {
+  font-size: 3rem;
+  padding-left: 10rem;
+}
+.training .cards {
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  width: 20rem;
+  height: 80%;
+  background: #E4E9E0;
+  color: black;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .icon {
+  width: 20%;
+}
+.card .caret {
+  width: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+.card h3 {
+  font-size: 1.7rem;
+}
+.card p {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=index.css.map */
