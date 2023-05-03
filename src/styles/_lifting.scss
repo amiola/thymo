@@ -17,9 +17,11 @@
 
     .right{
         @include flex(space-around,center,column);
+        width: 70%;
     }
 
     .text{
+        padding: 3rem 0;
         text-align: center;
         h2{
             font-size: 4rem;
@@ -28,4 +30,30 @@
             font-size: 2rem;
         }
         }
+    .btns{
+        @include flex(space-around, center, column);
+        width: 100%;
+        padding: 3rem;
+        margin-top: 2rem;
+    }
+    .lifting-group{
+        border-radius: 1.5rem;
+        background: $color2;
+        margin: 1rem 0;
+        padding: 2rem;
+        @include flex(start, center, row);
+        width: 100%;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.02);
+        }
+        img{
+            width: 10rem;
+        }
+        h2{
+            font-size: 2.5rem;
+            margin-left: 4rem;
+        }
+    }
     }

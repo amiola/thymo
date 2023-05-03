@@ -1,4 +1,4 @@
-import { nutritionCards, trainingCards } from "./cards";
+import { nutritionCards, superiorCards, trainingCards } from "./cards";
 
 export const pages = {
         training: {
@@ -43,4 +43,19 @@ export const pages = {
             text: 'Please, choose the training way you like the most:',
             cards: []
         }
+}
+
+export const trainingPages = {
+    superior:{
+        title: 'Superior training',
+        cards: superiorCards
+    },
+    inferior:{
+        title: 'Inferior training',
+        cards: []
+    },
+    core:{
+        title: 'Core training',
+        cards: []
+    }
 }

@@ -1,0 +1,54 @@
+.training{
+    width: 95vw;
+    height: 100vh;
+    margin-left: 5vw;
+    color: black;
+    background: $color1;
+    @include flex(flex-start,flex-start,column);
+
+    h1{
+        font-size: 3rem;
+        padding: 3rem 0 1rem 2rem;
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 0 2rem;
+    }
+
+    .muscles{
+        @include flex(space-evenly,center,row);
+        width: 80%;
+        margin: 2rem auto;
+
+        .muscle{
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background: $color2;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            img{
+                width: 12rem;
+                padding-top: 1rem;
+            }
+            h1{
+                font-size: 2rem;
+                text-align: center;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .exercices{
+        border-radius: 1rem;
+        background: rgba($color: #000000, $alpha: 0.5);
+        width: 95%;
+        height: 25rem;
+        margin: 0 auto;
+    }
+}
