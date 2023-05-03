@@ -35,9 +35,9 @@ useEffect(()=>{
   getExBy(exType,'',exMuscle)
 },[exMuscle])
 
-useEffect(()=>{
-  console.log(result[0]);
-},[result])
+// useEffect(()=>{
+//   console.log(result);
+// },[result])
     
   return (
     <Context.Provider

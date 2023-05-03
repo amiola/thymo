@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import Main from '../pages/Main'
 import Lifting from '../pages/training/Lifting'
 import Training from '../pages/training/Training'
+import Exercise from '../pages/training/Exercise'
 
 const Router = () => {
   return (
@@ -11,8 +12,9 @@ const Router = () => {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/:page' element={<Main/>} />
-      <Route path='/:page/weight-lifting' element={<Lifting/>} />
+      <Route path='/:page/:training' element={<Lifting/>} />
       <Route path='/:page/:training/:group' element={<Training/>} />
+      <Route path='/exercise' element={<Exercise/>} />
       <Route path='/*' element={<Navigate to='/'/>} />
     </Routes>
     </>

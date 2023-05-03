@@ -348,11 +348,11 @@ nav img:hover {
 .training .exercices {
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.5);
-  width: 85%;
+  max-width: 85vw;
   height: 25rem;
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -360,12 +360,29 @@ nav img:hover {
 }
 .training .exercices .exercise {
   height: 90%;
-  min-width: 15%;
+  min-width: 20rem;
   margin: auto 1rem;
   border: 1px black solid;
   border-radius: 1rem;
   cursor: pointer;
 }
 .training .exercices .exercise:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
+}
+.training .exercices .exercise h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+.training .exercices .exercise p {
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.exercise-container {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  color: black;
+  background: #F7F7F7;
 }/*# sourceMappingURL=index.css.map */

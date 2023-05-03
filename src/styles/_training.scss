@@ -67,24 +67,34 @@
     .exercices{
         border-radius: 1rem;
         background: rgba($color: #000000, $alpha: 0.5);
-        width: 85%;
+        max-width: 85vw;
         height: 25rem;
         margin: 0 auto;
-        overflow: hidden;
-        position: relative;
+        overflow-x: auto;
+        scroll-behavior: smooth;
 
         @include flex(flex-start,center,row);
 
         .exercise{
             height: 90%;
-            min-width: 15%;
+            min-width: 20rem;
             margin: auto 1rem;
             border: 1px black solid;
             border-radius: 1rem;
             cursor: pointer;
 
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.04);
+            }
+
+            h3{
+                font-size: 2rem;
+                text-align: center;
+                padding: 1rem;
+            }
+            p{
+                font-size: 1.5rem;
+                padding: 0.25rem 1rem;
             }
         }
     }
