@@ -325,10 +325,47 @@ nav img:hover {
   text-align: center;
   padding: 1rem 0;
 }
+.training .exercices-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.training .exercices-container .btn {
+  padding: 2rem 1rem;
+  margin: 3rem;
+  color: #F7F7F7;
+  font-size: 3rem;
+  background: #794F63;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.training .exercices-container .btn:hover {
+  transform: scale(1.05);
+}
 .training .exercices {
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.5);
-  width: 95%;
+  width: 85%;
   height: 25rem;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.training .exercices .exercise {
+  height: 90%;
+  min-width: 15%;
+  margin: auto 1rem;
+  border: 1px black solid;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.training .exercices .exercise:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=index.css.map */

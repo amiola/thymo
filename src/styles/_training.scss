@@ -44,11 +44,48 @@
         }
     }
 
+    .exercices-container{
+        width: 100%;
+        @include flex(flex-start,center,row);
+
+        .btn{
+            padding: 2rem 1rem;
+            margin: 3rem;
+            color: $color1;
+            font-size: 3rem;
+            background: $color4;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
     .exercices{
         border-radius: 1rem;
         background: rgba($color: #000000, $alpha: 0.5);
-        width: 95%;
+        width: 85%;
         height: 25rem;
         margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        @include flex(flex-start,center,row);
+
+        .exercise{
+            height: 90%;
+            min-width: 15%;
+            margin: auto 1rem;
+            border: 1px black solid;
+            border-radius: 1rem;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
     }
 }

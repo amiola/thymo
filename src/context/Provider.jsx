@@ -3,9 +3,9 @@ import Context from './Context'
 
 const Provider = ({children}) => {
 
-const [result,setResult]=useState()
-const [exType,setExType]=useState()
-const [exMuscle,setExMuscle]=useState()
+const [result,setResult]=useState([])
+const [exType,setExType]=useState('')
+const [exMuscle,setExMuscle]=useState('')
 
 
 const mainUrl = 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?';
@@ -22,7 +22,7 @@ const getExBy = async (type,name,muscle)=>{
     const url = mainUrl + 'name='+ name +'&type=' + type + '&muscle=' + muscle;
     // 'name=press&type=strength&muscle=quadriceps'
     const res = await fetch(url,options);
-    const data = await res.text();
+    const data = await res.json();
     setResult(data);
   }
   catch(err){
@@ -30,15 +30,21 @@ const getExBy = async (type,name,muscle)=>{
   }
 }
 
-getExBy('','','chest');
+useEffect(()=>{
+  if(exMuscle==='') return '';
+  getExBy(exType,'',exMuscle)
+},[exMuscle])
 
 useEffect(()=>{
-  console.log(result);
+  console.log(result[0]);
 },[result])
     
   return (
     <Context.Provider
     value={{
+      result,
+      exMuscle,
+      setExMuscle
     }}
     >
         {children}
