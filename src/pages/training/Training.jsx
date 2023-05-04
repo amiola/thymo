@@ -32,10 +32,10 @@ const Training = () => {
     const goToExercise=(ex)=>{
       navigation('/exercise',{
         state:{
-          name: ex.name,
-          difficulty: ex.difficulty,
-          equipment: ex.equipment,
-          instructions: ex.instructions
+          name: ex.Name,
+          primary: ex['Primary Muscles'],
+          secondary: ex['SecondaryMuscles'],
+          link: ex['Youtube link']
         }
       })
     }
@@ -49,7 +49,7 @@ const Training = () => {
         <div className="muscles">
           {group.cards.map((card,i)=>(
             <div className="muscle" key={i}
-            onClick={()=>getExercises(card.name)}>
+            onClick={()=>getExercises(card.muscle)}>
               <img src={card.icon} alt={`${card.name} icon`} />
               <h1>{card.name.toUpperCase()}</h1>
             </div>
@@ -64,9 +64,15 @@ const Training = () => {
           {result.map((exercise,i)=>(
             <div className="exercise" key={i}
             onClick={()=>goToExercise(exercise)}>
-              <h3>{exercise.name}</h3>
-              <p>Difficulty: {exercise.difficulty}</p>
-              <p>Equipment: {exercise.equipment}</p>
+              <h3>{exercise.Name}</h3>
+              <p>Primary muscles:</p> 
+              <div className="primary">{exercise['Primary Muscles'].map((muscle,i)=>(
+                <p key={i}>{muscle}</p>
+              ))}</div>
+              <p>Secondary muscles:</p> 
+              <div className="secondary">{exercise['SecondaryMuscles'].map((muscle,i)=>(
+                <p key={i}>{muscle}</p>
+              ))}</div>
             </div>
           ))}
         </div>

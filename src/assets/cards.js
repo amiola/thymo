@@ -67,23 +67,69 @@ export const liftingGroupsCards = [
 export const superiorCards = [
     {
         name: 'chest',
+        muscle: 'pectoralis major',
         icon: '/icons/chest.svg'
     },
     {
         name: 'biceps',
+        muscle: 'biceps',
         icon: '/icons/biceps.png'
     },
     {
         name: 'triceps',
+        muscle: 'triceps',
         icon: '/icons/triceps.png'
     },
     {
         name: 'lats',
+        muscle: 'latissimus dorsi',
         icon: '/icons/lats.svg'
     }
     ,
     {
-        name: 'forearms',
+        name: 'trapezius',
+        muscle: 'trapezius',
+        icon: '/icons/biceps.png'
+    },
+    {
+        name: 'deltoids',
+        muscle: 'deltoid',
+        icon: '/icons/biceps.png'
+    }
+]
+
+export const inferiorCards = [
+    {
+        name: 'quadriceps',
+        muscle: 'quadriceps',
+        icon: '/icons/chest.svg'
+    },
+    {
+        name: 'hamstrings',
+        muscle: 'hamstrings',
+        icon: '/icons/biceps.png'
+    },
+    {
+        name: 'gluteus medius',
+        muscle: 'gluteus medius',
+        icon: '/icons/triceps.png'
+    },
+    {
+        name: 'gluteus maximus',
+        muscle: 'gluteus maximus',
+        icon: '/icons/triceps.png'
+    }
+]
+
+export const coreCards = [
+    {
+        name: 'abdominals',
+        muscle: 'abdominals',
+        icon: '/icons/chest.svg'
+    },
+    {
+        name: 'oblique',
+        muscle: 'external oblique',
         icon: '/icons/biceps.png'
     }
 ]

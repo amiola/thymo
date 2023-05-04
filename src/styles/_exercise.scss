@@ -4,4 +4,75 @@
     margin-left: 5vw;
     color: black;
     background: $color1;
+
+    .head-img{
+        width: 100%;
+        height: 20%;
+        background: url('/img/fitness8.jpg');
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        color: $color1;
+        @include flex(flex-start,center,row);
+
+        h1{
+            font-size: 4rem;
+            margin-left: 5rem;
+            padding: 1rem;
+            background: rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+
+    .top{
+        @include flex(space-between,flex-start,row)
+    }
+
+    .btn{
+        border: none;
+        border-radius: 2rem;
+        background: $color3;
+        padding: 1rem;
+        color: $color1;
+        font-size: 1.5rem;
+        margin: 2rem;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+
+    .prim-sec{
+        @include flex(flex-start,flex-start,column);
+
+        h3{
+            font-size: 2rem
+        }
+
+        .primary,.secondary{
+            @include flex(flex-start,center,row);
+                margin: 1rem;
+
+                p{
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    margin: 0.2rem;
+                    border-radius: 0.5rem;
+                    background-color: $color7;
+                    color: $color1;
+                }
+        }
+    }
+
+    .youtube-video{
+        width: 60%;
+        height: 60%;
+        margin: auto;
+        margin-top: 2rem;
+        iframe{
+            width: 90%;
+            height: 100%;
+        }
+    }
 }

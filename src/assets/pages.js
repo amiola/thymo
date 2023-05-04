@@ -1,4 +1,4 @@
-import { nutritionCards, superiorCards, trainingCards } from "./cards";
+import { coreCards, inferiorCards, nutritionCards, superiorCards, trainingCards } from "./cards";
 
 export const pages = {
         training: {
@@ -52,10 +52,10 @@ export const trainingPages = {
     },
     inferior:{
         title: 'Inferior training',
-        cards: []
+        cards: inferiorCards
     },
     core:{
         title: 'Core training',
-        cards: []
+        cards: coreCards
     }
 }
