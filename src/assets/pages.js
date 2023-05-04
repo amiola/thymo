@@ -59,3 +59,7 @@ export const trainingPages = {
         cards: coreCards
     }
 }
+
+export const yogaPages = {
+    
+}

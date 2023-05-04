@@ -50,7 +50,9 @@ const Training = () => {
           {group.cards.map((card,i)=>(
             <div className="muscle" key={i}
             onClick={()=>getExercises(card.muscle)}>
+              <div className="muscle-img">
               <img src={card.icon} alt={`${card.name} icon`} />
+              </div>
               <h1>{card.name.toUpperCase()}</h1>
             </div>
           ))}

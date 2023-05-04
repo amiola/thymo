@@ -68,7 +68,7 @@ export const superiorCards = [
     {
         name: 'chest',
         muscle: 'pectoralis major',
-        icon: '/icons/chest.svg'
+        icon: '/icons/pectoralis.png'
     },
     {
         name: 'biceps',
@@ -89,12 +89,12 @@ export const superiorCards = [
     {
         name: 'trapezius',
         muscle: 'trapezius',
-        icon: '/icons/biceps.png'
+        icon: '/icons/trapezius.png'
     },
     {
         name: 'deltoids',
         muscle: 'deltoid',
-        icon: '/icons/biceps.png'
+        icon: '/icons/deltoids.png'
     }
 ]
 
@@ -102,22 +102,22 @@ export const inferiorCards = [
     {
         name: 'quadriceps',
         muscle: 'quadriceps',
-        icon: '/icons/chest.svg'
+        icon: '/icons/quadriceps.png'
     },
     {
         name: 'hamstrings',
         muscle: 'hamstrings',
-        icon: '/icons/biceps.png'
+        icon: '/icons/hamstrings.png'
     },
     {
         name: 'gluteus medius',
         muscle: 'gluteus medius',
-        icon: '/icons/triceps.png'
+        icon: '/icons/gluteus_medius.png'
     },
     {
         name: 'gluteus maximus',
         muscle: 'gluteus maximus',
-        icon: '/icons/triceps.png'
+        icon: '/icons/gluteus_maximus.png'
     }
 ]
 
@@ -125,11 +125,11 @@ export const coreCards = [
     {
         name: 'abdominals',
         muscle: 'abdominals',
-        icon: '/icons/chest.svg'
+        icon: '/icons/abdominals.png'
     },
     {
-        name: 'oblique',
-        muscle: 'external oblique',
-        icon: '/icons/biceps.png'
+        name: 'obliques',
+        muscle: 'external obliques',
+        icon: '/icons/obliques.png'
     }
 ]

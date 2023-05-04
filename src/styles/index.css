@@ -308,16 +308,30 @@ nav img:hover {
 }
 .training .muscles .muscle {
   border-radius: 1rem;
+  height: 20rem;
   padding: 1rem 2rem;
   margin: 1rem;
   background: #E4E9E0;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.training .muscles .muscle .muscle-img {
+  width: 12rem;
+  height: 15rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .training .muscles .muscle:hover {
   transform: scale(1.05);
 }
 .training .muscles .muscle img {
-  width: 12rem;
+  width: 100%;
   padding-top: 1rem;
 }
 .training .muscles .muscle h1 {
