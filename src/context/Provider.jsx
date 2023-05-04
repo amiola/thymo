@@ -4,8 +4,22 @@ import Context from './Context'
 const Provider = ({children}) => {
 
 const [result,setResult]=useState([])
-const [exType,setExType]=useState('')
 const [exMuscle,setExMuscle]=useState('')
+
+// Getting yoga data
+const [yogaData,setYogaData]=useState()
+const yogaUrl = 'https://yoga-api-nzy4.onrender.com/v1/categories'
+
+const getYogaData = async ()=>{
+  const url = yogaUrl;
+  const res = await fetch(url);
+  const data = await res.json();
+  setYogaData(data)
+}
+
+useEffect(()=>{
+  getYogaData()
+},[])
 
 /*
 const mainUrl = 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?';
@@ -33,7 +47,6 @@ const getExercise = async (muscle)=>{
     // const url = mainUrl + 'name='+ name +'&type=' + type + '&muscle=' + muscle;
     // 'name=press&type=strength&muscle=quadriceps'
     const url = mainUrl + muscle.split(' ').join('%20')
-    console.log(url)
     const res = await fetch(url,options);
     const data = await res.json();
     setResult(data);
@@ -48,16 +61,17 @@ useEffect(()=>{
   getExercise(exMuscle)
 },[exMuscle])
 
-useEffect(()=>{
-  console.log(result);
-},[result])
+// useEffect(()=>{
+//   console.log(result);
+// },[result])
     
   return (
     <Context.Provider
     value={{
       result,
       exMuscle,
-      setExMuscle
+      setExMuscle,
+      yogaData
     }}
     >
         {children}

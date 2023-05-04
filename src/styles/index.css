@@ -210,74 +210,6 @@ nav img:hover {
   font-size: 1.2rem;
 }
 
-.lifting {
-  width: 95vw;
-  height: 100vh;
-  margin-left: 5vw;
-  color: black;
-  background: #F7F7F7;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.lifting .img {
-  width: 30%;
-  height: 100%;
-  background: url("/img/fitness3.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-}
-.lifting .right {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-}
-.lifting .text {
-  padding: 3rem 0;
-  text-align: center;
-}
-.lifting .text h2 {
-  font-size: 4rem;
-}
-.lifting .text p {
-  font-size: 2rem;
-}
-.lifting .btns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 3rem;
-  margin-top: 2rem;
-}
-.lifting .lifting-group {
-  border-radius: 1.5rem;
-  background: #E4E9E0;
-  margin: 1rem 0;
-  padding: 2rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  cursor: pointer;
-}
-.lifting .lifting-group:hover {
-  transform: scale(1.02);
-}
-.lifting .lifting-group img {
-  width: 10rem;
-}
-.lifting .lifting-group h2 {
-  font-size: 2.5rem;
-  margin-left: 4rem;
-}
-
 .training {
   width: 95vw;
   height: 100vh;
@@ -287,18 +219,88 @@ nav img:hover {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: row;
+}
+.training .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+.training .text {
+  padding: 3rem 0;
+  text-align: center;
+}
+.training .text h2 {
+  font-size: 4rem;
+}
+.training .text p {
+  font-size: 2rem;
+}
+.training .btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  padding: 3rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.training .training-group {
+  border-radius: 1.5rem;
+  background: #E4E9E0;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+.training .training-group:hover {
+  transform: scale(1.02);
+}
+.training .training-group img {
+  width: 10rem;
+}
+.training .training-group h2 {
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}
+.training .training-group h3 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.training .training-group p {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.group {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  color: black;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
-.training h1 {
+.group h1 {
   font-size: 3rem;
   padding: 3rem 0 1rem 2rem;
 }
-.training h3 {
+.group h3 {
   font-size: 2rem;
   font-weight: 400;
   padding: 0 2rem;
 }
-.training .muscles {
+.group .muscles {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -306,7 +308,7 @@ nav img:hover {
   width: 80%;
   margin: 2rem auto;
 }
-.training .muscles .muscle {
+.group .muscles .muscle {
   border-radius: 1rem;
   height: 20rem;
   padding: 1rem 2rem;
@@ -318,7 +320,7 @@ nav img:hover {
   align-items: center;
   flex-direction: column;
 }
-.training .muscles .muscle .muscle-img {
+.group .muscles .muscle .muscle-img {
   width: 12rem;
   height: 15rem;
   align-items: center;
@@ -327,26 +329,26 @@ nav img:hover {
   align-items: center;
   flex-direction: column;
 }
-.training .muscles .muscle:hover {
+.group .muscles .muscle:hover {
   transform: scale(1.05);
 }
-.training .muscles .muscle img {
+.group .muscles .muscle img {
   width: 100%;
   padding-top: 1rem;
 }
-.training .muscles .muscle h1 {
+.group .muscles .muscle h1 {
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0;
 }
-.training .exercices-container {
+.group .exercices-container {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
-.training .exercices-container .btn {
+.group .exercices-container .btn {
   padding: 2rem 1rem;
   margin: 3rem;
   color: #F7F7F7;
@@ -356,10 +358,10 @@ nav img:hover {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.training .exercices-container .btn:hover {
+.group .exercices-container .btn:hover {
   transform: scale(1.05);
 }
-.training .exercices {
+.group .exercices {
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.3);
   max-width: 85vw;
@@ -372,7 +374,7 @@ nav img:hover {
   align-items: center;
   flex-direction: row;
 }
-.training .exercices .exercise {
+.group .exercices .exercise {
   height: 90%;
   min-width: 20rem;
   margin: auto 1rem;
@@ -380,19 +382,19 @@ nav img:hover {
   border-radius: 1rem;
   cursor: pointer;
 }
-.training .exercices .exercise:hover {
+.group .exercices .exercise:hover {
   transform: scale(1.04);
 }
-.training .exercices .exercise h3 {
+.group .exercices .exercise h3 {
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0 0.5rem 0;
 }
-.training .exercices .exercise p {
+.group .exercices .exercise p {
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
 }
-.training .exercices .exercise .primary, .training .exercices .exercise .secondary {
+.group .exercices .exercise .primary, .group .exercices .exercise .secondary {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -400,7 +402,7 @@ nav img:hover {
   flex-wrap: wrap;
   margin-left: 1rem;
 }
-.training .exercices .exercise .primary p, .training .exercices .exercise .secondary p {
+.group .exercices .exercise .primary p, .group .exercices .exercise .secondary p {
   font-size: 1.2rem;
   padding: 0.5rem;
   margin: 0.2rem;
@@ -408,7 +410,7 @@ nav img:hover {
   background-color: #777777;
   color: #F7F7F7;
 }
-.training .exercices .exercise .secondary p {
+.group .exercices .exercise .secondary p {
   background-color: #E4E9E0;
   color: black;
 }

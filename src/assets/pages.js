@@ -1,4 +1,6 @@
-import { coreCards, inferiorCards, nutritionCards, superiorCards, trainingCards } from "./cards";
+
+import { coreCards, inferiorCards, liftingGroupsCards, nutritionCards, superiorCards, trainingCards } from "./cards";
+
 
 export const pages = {
         training: {
@@ -45,7 +47,7 @@ export const pages = {
         }
 }
 
-export const trainingPages = {
+export const liftingCategories = {
     superior:{
         title: 'Superior training',
         cards: superiorCards
@@ -60,6 +62,16 @@ export const trainingPages = {
     }
 }
 
-export const yogaPages = {
-    
+export const trainings = {
+    weightLifting:{
+        title: 'Weight Lifting',
+        text: 'Please, choose the training way you like the most:',
+        img: '/img/fitness3.jpg',
+        categories: liftingGroupsCards
+    },
+    yoga:{
+        title: 'Yoga',
+        text: 'Please, choose the yoga category you like the most:',
+        img: '/img/yoga2.jpg',
+    }
 }
