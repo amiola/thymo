@@ -54,17 +54,17 @@ export const liftingGroupsCards = [
 {
     name: 'superior',
     title: 'Superior training',
-    navigation: '/training/weight-lifting/superior'
+    navigation: '/training/weightLifting/superior'
 },
 {
     name: 'inferior',
     title: 'Inferior training',
-    navigation: '/training/weight-lifting/inferior'
+    navigation: '/training/weightLifting/inferior'
 },
 {
     name: 'core',
     title: 'Core training',
-    navigation: '/training/weight-lifting/core'
+    navigation: '/training/weightLifting/core'
 }
 ]
 

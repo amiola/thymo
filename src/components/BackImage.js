@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const SideImage = styled.div`
-    width: 30%;
-    height: 100%;
+export const BackImage = styled.div`
+    width: ${({width})=>width};
+    height: ${({height})=>height};
     background: url(${({img})=>img});
     background-position: center;
     background-repeat: none;

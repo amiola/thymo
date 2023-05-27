@@ -15,6 +15,7 @@
         position: relative;
         grid-column: 1;
         grid-row: 1;
+        
         .beat{
             border-radius: 50%;
             width: 4rem;
@@ -29,6 +30,7 @@
             width: 20vw;
             border-radius: 1rem;
             border: 0.2px solid $color3;
+            box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
         }
     }
 
@@ -37,6 +39,7 @@
         border-radius: 1rem;
         position: relative;
         cursor: pointer;
+        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
         
         @include flex(flex-end,flex-start,column);
 

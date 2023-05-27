@@ -5,6 +5,8 @@ import Main from '../pages/Main'
 import Training from '../pages/training/Training'
 import Exercise from '../pages/training/Exercise'
 import Group from '../pages/training/Group'
+import Category from '../pages/training/Category'
+import Pose from '../pages/training/Pose'
 
 const Router = () => {
   return (
@@ -12,9 +14,11 @@ const Router = () => {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/:page' element={<Main/>} />
-      <Route path='/:page/:training' element={<Training/>} />
-      <Route path='/:page/:training/:category' element={<Group/>} />
+      <Route path='/training/:training' element={<Training/>} />
+      <Route path='/training/weightLifting/:group' element={<Group/>} />
+      <Route path='/training/yoga/category/:id' element={<Category/>} />
       <Route path='/exercise' element={<Exercise/>} />
+      <Route path='/pose/:id' element={<Pose/>} />
       <Route path='/*' element={<Navigate to='/'/>} />
     </Routes>
     </>

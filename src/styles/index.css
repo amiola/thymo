@@ -41,6 +41,7 @@ nav img {
   width: 4rem;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 nav img:hover {
   transform: scale(1.1);
@@ -78,12 +79,14 @@ nav img:hover {
   width: 20vw;
   border-radius: 1rem;
   border: 0.2px solid #4B3262;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .home .box {
   width: 20vw;
   border-radius: 1rem;
   position: relative;
   cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -153,6 +156,9 @@ nav img:hover {
   color: #F7F7F7;
   background: #F7F7F7;
 }
+.container .head {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
 .container .head h1 {
   font-size: 4rem;
   font-weight: 500;
@@ -186,6 +192,7 @@ nav img:hover {
   border-radius: 1.5rem;
   position: relative;
   padding: 1rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -254,6 +261,7 @@ nav img:hover {
   background: #E4E9E0;
   margin: 1rem 0;
   padding: 1.5rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -314,6 +322,7 @@ nav img:hover {
   padding: 1rem 2rem;
   margin: 1rem;
   background: #E4E9E0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -357,6 +366,7 @@ nav img:hover {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .group .exercices-container .btn:hover {
   transform: scale(1.05);
@@ -430,6 +440,7 @@ nav img:hover {
   background-repeat: none;
   background-size: cover;
   color: #F7F7F7;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -493,4 +504,133 @@ nav img:hover {
 .exercise-container .youtube-video iframe {
   width: 90%;
   height: 100%;
+}
+
+.category {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  color: black;
+  background: #F7F7F7;
+}
+.category h1 {
+  display: inline-block;
+  font-size: 4rem;
+  margin: 5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #F7F7F7;
+}
+.category h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem 2rem;
+}
+.category p {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem;
+  background: #E4E9E0;
+  padding: 1rem 2rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+.category .poses-box {
+  width: 95%;
+  margin: 0 auto;
+  background: #E4E9E0;
+  border-radius: 1.5rem;
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.category .poses-box .pose-box {
+  min-width: 18rem;
+  height: 22rem;
+  margin: 1rem;
+  border: 1px solid #777777;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.category .poses-box .pose-box:hover {
+  transform: scale(1.05);
+}
+.category .poses-box .pose-box img {
+  width: 13rem;
+  margin: 2rem 0;
+}
+.category .poses-box .pose-box .titles {
+  text-align: center;
+}
+.category .poses-box .pose-box h3 {
+  font-size: 1.7rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.category .poses-box .pose-box h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pose {
+  width: 95vw;
+  height: 100vh;
+  margin-left: 5vw;
+  color: black;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.pose .content {
+  width: 65%;
+}
+.pose .content h1 {
+  font-size: 4rem;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background: rgba(75, 50, 98, 0.2);
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.pose .content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 2rem;
+}
+.pose .content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem;
+}
+.pose .content h3 span {
+  background: #E4E9E0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.pose .content h4 {
+  font-size: 2.5rem;
+  margin: 0 2rem;
+}
+.pose .content p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0.5rem 2rem;
+}
+.pose .content .ben-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.pose .content .ben-img .img-container {
+  overflow: hidden;
+  width: 20%;
+}
+.pose .content .ben-img img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

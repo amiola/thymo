@@ -1,0 +1,59 @@
+.pose{
+    width: 95vw;
+    height: 100vh;
+    margin-left: 5vw;
+    color: black;
+    background: $color1;
+
+    @include flex(space-between,flex-start,row);
+
+    .content{
+        width: 65%;
+
+        h1{
+            font-size: 4rem;
+            margin: 2rem;
+            padding: 0.5rem 1rem;
+            background: rgba($color: $color3, $alpha: 0.2);
+            display: inline-block;
+            border-radius: 0.5rem;
+            // box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 1rem 2rem;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 2rem;
+
+            span{
+                background: $color2;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+        h4{
+            font-size: 2.5rem;
+            margin: 0 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 0.5rem 0 0.5rem 2rem;
+        }
+
+        .ben-img{
+            @include flex(space-between,flex-start,row);
+
+            .img-container{
+                overflow: hidden;
+                width: 20%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

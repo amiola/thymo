@@ -3,7 +3,7 @@ import Nav from '../../navbar/Nav'
 import { useNavigate, useParams } from 'react-router-dom'
 import { trainings } from '../../assets/pages'
 import Context from '../../context/Context'
-import {SideImage} from '../../components/SideImage'
+import { BackImage } from '../../components/BackImage'
 
 const Training = () => {
   const {yogaData}=useContext(Context)
@@ -14,7 +14,7 @@ const Training = () => {
     <>
     <Nav/>
     <section className="training">
-      <SideImage img={train.img}/>
+      <BackImage img={train.img} width='30%' height='100%'/>
       <div className="right">
       <div className="text">
         <h2>{train.title.toUpperCase()}</h2>
@@ -32,7 +32,8 @@ const Training = () => {
           )
 })}
         {trainName==='yoga' && yogaData.map((cat,i)=>(
-          <div key={i} className="training-group">
+          <div key={i} className="training-group"
+          onClick={()=>navigation(`/training/yoga/category/${cat.id}`)}>
             <div className="yogaCats">
             <h3>{cat.category_name}</h3>
             <p>{cat.category_description}</p>

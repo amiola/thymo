@@ -8,7 +8,7 @@ const Group = () => {
 
     const navigation = useNavigate()
 
-    const groupName = useParams().category
+    const groupName = useParams().group
     const group = liftingCategories[groupName]
 
     const slider = useRef()
