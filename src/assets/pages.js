@@ -11,38 +11,38 @@ export const pages = {
         },
         parameters:{
             img: '/img/fitness2.jpg',
-            title: 'WELCOME TO OUR PARAMETERS PLACE',
-            text: 'Please, choose the training way you like the most:',
+            title: 'COMMING SOON...',
+            text: 'Parameters calculator tool under construction.',
             cards: []
         },
         globalNews:{
             img: '/img/fitness3.jpg',
-            title: 'WELCOME TO OUR GLOBAL NEWS PLACE',
-            text: 'Please, choose the training way you like the most:',
+            title: 'COMMING SOON...',
+            text: 'Global news under construction.',
             cards: []
         },
         knowledgeHub:{
             img: '/img/fitness4.jpg',
-            title: 'WELCOME TO OUR KNOWLEDGE HUB PLACE',
-            text: 'Please, choose the training way you like the most:',
+            title: 'COMMING SOON...',
+            text: 'Knowledge hub under construction.',
             cards: []
         },
         nutrition:{
             img: '/img/health7.jpg',
             title: 'WELCOME TO OUR NUTRITION PLACE',
-            text: 'Please, choose the training way you like the most:',
+            text: 'Please, choose a card to learn more:',
             cards: nutritionCards
         },
         wellness:{
             img: '/img/fitness1.jpg',
-            title: 'WELCOME TO OUR WELLNESS PLACE',
-            text: 'Please, choose the training way you like the most:',
+            title: 'COMMING SOON...',
+            text: 'Welness site under construction.',
             cards: []
         },
         peopleDirectory: {
             img: '/img/fitness1.jpg',
-            title: 'WELCOME TO OUR TRAINING ROUTINE PLACE',
-            text: 'Please, choose the training way you like the most:',
+            title: 'COMMING SOON...',
+            text: 'People directory site under construction.',
             cards: []
         }
 }
@@ -72,6 +72,31 @@ export const trainings = {
     yoga:{
         title: 'Yoga',
         text: 'Please, choose the yoga category you like the most:',
+        img: '/img/yoga2.jpg',
+    },
+    funcional:{
+        title: 'Funcional',
+        text: 'Comming soon. Site under construction',
+        img: '/img/yoga2.jpg',
+    },
+    cardio:{
+        title: 'Cardio',
+        text: 'Comming soon. Site under construction',
+        img: '/img/yoga2.jpg',
+    },
+    balancedRecipes:{
+        title: 'Balanced Recipes',
+        text: 'Comming soon. Site under construction',
+        img: '/img/yoga2.jpg',
+    },
+    nutrition:{
+        title: 'Nutrition',
+        text: 'Comming soon. Site under construction',
+        img: '/img/yoga2.jpg',
+    },
+    healthyHabits:{
+        title: 'Healthy Habits',
+        text: 'Comming soon. Site under construction',
         img: '/img/yoga2.jpg',
     }
 }
