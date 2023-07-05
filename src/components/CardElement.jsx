@@ -1,13 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Card = (props) => {
+const CardElement = (props) => {
     const icon = `icons/${props.card.name}.svg`
     const caret = `icons/caret${props.card.caret}.svg`
 
   return (
     <>
-    <div className="card">
+    <div className="card-element">
         <img src={icon} alt={props.card.name} className='icon'/>
         <h3>{props.card.name.toUpperCase()}</h3>
         <p>{props.card.text}</p>
@@ -17,4 +17,4 @@ const Card = (props) => {
   )
 }
 
-export default Card
+export default CardElement

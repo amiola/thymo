@@ -1,5 +1,5 @@
 
-import { coreCards, inferiorCards, liftingGroupsCards, nutritionCards, superiorCards, trainingCards } from "./cards";
+import { calculationsCards, coreCards, inferiorCards, liftingGroupsCards, nutritionCards, superiorCards, trainingCards } from "./cards";
 
 
 export const pages = {
@@ -13,7 +13,7 @@ export const pages = {
             img: '/img/fitness2.jpg',
             title: 'COMMING SOON...',
             text: 'Parameters calculator tool under construction.',
-            cards: []
+            cards: calculationsCards
         },
         globalNews:{
             img: '/img/fitness3.jpg',
@@ -62,7 +62,7 @@ export const liftingCategories = {
     }
 }
 
-export const trainings = {
+export const cards = {
     weightLifting:{
         title: 'Weight Lifting',
         text: 'Please, choose the training way you like the most:',
@@ -98,5 +98,10 @@ export const trainings = {
         title: 'Healthy Habits',
         text: 'Comming soon. Site under construction',
         img: '/img/yoga2.jpg',
+    },
+    calculation:{
+        title: 'Calculation',
+        text: 'Insert the requested values to compute many things as your Body Mass Index (BMI), your Body Fat Percetage (BFP), food energy and the list is growing!',
+        img: '/img/balanza.jpg',
     }
 }

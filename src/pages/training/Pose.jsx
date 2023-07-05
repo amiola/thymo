@@ -27,7 +27,7 @@ const Pose = () => {
         </div>
         </div>
         </div>
-        <BackImage img={randomImage} width='30%' height='100%'></BackImage>
+        <BackImage img={randomImage} width='30%' height='100%' className='back-img'></BackImage>
     </section>
     </>
   )

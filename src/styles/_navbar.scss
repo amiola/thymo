@@ -13,9 +13,10 @@ nav{
 
     li{
         list-style: none;
+        text-align: center;
     }
     img{
-        width: 4rem;
+        width: 70%;
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
@@ -24,4 +25,91 @@ nav{
             transform: scale(1.1);
         }
     }
+    .nav-logo, .nav-lang{
+        text-align: center;
+    }
+    .nav-hamburguer {
+        display: none;
+      }
+}
+
+@media only screen and (max-width: 700px){
+    nav{
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    nav{
+        height: 10vh;
+        width: 100%;
+        @include flex(space-between,center,row);
+        position: fixed;
+
+        ul{
+            @include flex(space-between,center,column);
+        }
+        .nav-logo{
+          margin: 1rem;
+          img{
+            height: 3rem;
+            width: 100%;
+          }
+        }
+        .nav-lang{
+          display: none;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 9.5vh;
+          left: 100%;
+          background: $color6;
+          flex-direction: column;
+          align-items: end;
+          width: 40vw;
+          transition: transform 1s ease;
+          padding: 1rem;
+          padding-right: 2rem;
+  
+          img{
+            height: 3rem;
+            width: 100%;
+          }
+        }
+        
+        .nav-links.open {
+          transform: translateX(-100%);
+        }
+        .nav-hamburguer {
+          display: flex;
+          flex-direction: column;
+          margin: 2rem;
+          margin-top: 2.5rem;
+          cursor: pointer;
+  
+          span{
+            display: block;
+            width: 2.5rem;
+            height: 0.5rem;
+            background: $color4;
+            margin-bottom: 5px;
+            transform-origin: 5px 0px;
+            transition: all 0.5s ease;
+            }
+        }
+      
+        .nav-links.open span:nth-child(1) {
+          transform: rotate(45deg) translate(0px, 0px);
+        }
+        .nav-links.open span:nth-child(2) {
+          display: none;
+        }
+        .nav-links.open span:nth-child(3) {
+          transform: rotate(-45deg) translate(-5px, 1px);
+        }
+        
+    }
+
+    
 }

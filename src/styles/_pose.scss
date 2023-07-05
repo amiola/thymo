@@ -46,14 +46,48 @@
 
         .ben-img{
             @include flex(space-between,flex-start,row);
-
+            .benefits{
+                margin-right: 2rem;
+            }
             .img-container{
                 overflow: hidden;
-                width: 20%;
+                width: 60%;
             }
             img{
                 width: 100%;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .pose{
+        width: 90vw;
+        margin-left: 10vw;
+
+        .ben-img{
+            .benefits{
+                width: 76%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .pose{
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 10vh;
+
+        .content{
+            width: 100%;
+            margin-right: 1rem;
+        }
+        
+
+        .back-img{
+            display: none;
         }
     }
 }
